@@ -1,16 +1,3 @@
-/* const menu = document.getElementById("menu");
-
-function toggleMenu() {
-    menu.style.display = (menu.style.display === "block") ? "none" : "block";
-}
-
-window.addEventListener("resize", () => {
-    if (window.innerWidth >= 768) {
-        menu.style.display = "none";
-    }
-}); */
-
-/* Sponsor scroll wheel */
 (function () {
   const openBtn = document.getElementById("nav-hamburger");
   const menu = document.getElementById("mobile-menu");
