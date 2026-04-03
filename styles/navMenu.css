@@ -18,8 +18,7 @@
 #mobile-menu-panel {
   height: 100%;
   width: 100%;
-  background: #000;
-  border: 2px solid #2aa3ff; /* matches your blue outline vibe */
+  background: linear-gradient(to bottom, #F9B700, #FF5F43, #BC0035, #7A009F, #0A4BFF, #33FF7A);
   box-sizing: border-box;
 
   transform: translateX(100%);
@@ -132,12 +131,12 @@
     /* Layout */
     #desktop-nav > a {
         text-decoration: none;
-        font-size: 18px;
-        font-weight: 200;
+        font-size: 20px;
+        font-weight: 400;
     }
 
     #desktop-nav > a:hover, #desktop-nav > a:focus {
-        font-weight: 400;
+        font-weight: 600;
     }
 
     #points-entry-portal-btn-desktop {
@@ -167,13 +166,13 @@
 }
 
 nav {
-  border-bottom: 2px solid white;
+  border-bottom: 1px solid black;
   position: sticky;
   top: 0;
   z-index: 10;
 
   height: 90px;
-  background-color: black;
+  background: linear-gradient(to right, #F9B700, #FF5F43, #BC0035, #7A009F, #0A4BFF, #33FF7A);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -182,6 +181,8 @@ nav {
 #nav-logo {
   height: 70px;
   width: 70px;
+
+  border-radius: 999px;
 
   margin-left: 2rem;
 }
@@ -194,16 +195,8 @@ nav {
 }
 
 .desktop-nav-link {
-    display: none;
-}
-
-nav {
-    height: 90px;
-    background-color: black;
-
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  font-weight: 400;
+  display: none;
 }
 
 .nav-link {

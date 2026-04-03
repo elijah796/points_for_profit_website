@@ -1,10 +1,17 @@
 * { margin: 0px; padding: 0px; }
-body { margin: 0px; padding: 0px; background-color: #f4f4f4;}
+body { margin: 0px; padding: 0px; background: linear-gradient(to bottom, #F9B700, #FF5F43, #BC0035, #7A009F, #0A4BFF, #33FF7A);}
 
 html {
     scroll-behavior: smooth;
     scroll-padding-top: 100px;
 }
+
+.color-1 {color: #F9B700;}
+.color-2 {color: #FF5F43;}
+.color-3 {color: #E63365;}
+.color-4 {color: #B53FD9;}
+.color-5 {color: #4D7CFF;}
+.color-6 {color: #33FF7A;}
 
 #hero {
     max-width: 1440px;
@@ -38,7 +45,7 @@ html {
     max-width: 1920px;
     margin: 0px auto;
 
-    background-image: linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)), url("images/hero-image.png");
+    background: linear-gradient(rgba(0,0,0,0.1), rgba(0, 0, 0, 0.1));
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -51,20 +58,22 @@ html {
 #banner-text-contaner {
     color: white;
     text-align: center;
-
+    
     padding: 2rem;
-    background-color: rgba(37, 37, 37, 0.7);
+    background-color: rgba(39, 39, 39, 0.4);
     border-radius: 20px;
 }
 
 h1 {
     font-size: 3.5rem;
     margin-bottom: 0.5rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 #slogan {
     font-size: 1.5rem;
-    font-weight: lighter;
+    font-weight: 345;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 /*** Hero ***/
@@ -106,7 +115,7 @@ h1 {
 }
 
 .HIW-card {
-  background-color: #252525;
+  background-color: #333333;
   color: #fff;
   border-radius: 20px;
   padding: 2rem;
@@ -137,44 +146,53 @@ h1 {
   opacity: 0.9;
 }
 
-/* Partners */
+/* Who We Are */
 
-#partners {
+#who-we-are {
     margin-bottom: 5rem;
 }
 
-#partners-h2 {
-    margin: 2rem 0px 1rem 0rem;
+#who-we-are-header {
+    text-align: center;
+    margin-bottom: 2rem;
+
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+    background-color: rgba(255, 255, 255, 0.92);
+}
+
+#who-we-are-h2 {
     grid-column: 1 / 12;
 }
 
-#partners-hint {
+#who-we-are-hint {
     font-size: 0.75rem;
     font-weight: lighter;
 }
 
-#partners-grid-box {
+#who-we-are-grid-box {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     gap: 2rem
 }
 
 @media (min-width: 768px) {
-    #partners-grid-box {
+    #who-we-are-grid-box {
         grid-template-columns: repeat(2, 1fr);
     }
 }
 
-.partners-card {
+.who-we-are-card {
     padding: 2rem;
     border-radius: 20px;
     box-shadow: 0 10px 25px rgba(0,0,0,0.08);
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.92);
 
     align-self: start;
 }
 
-.partners-list {
+.who-we-are-list {
     display: flex;
     flex-direction: column;
     gap: 1rem;
@@ -183,7 +201,7 @@ h1 {
     padding-left: 1.25rem;
 }
 
-.partners-list > li {
+.who-we-are-list > li {
     font-size: 1rem;
 
     list-style: inside;
@@ -192,7 +210,6 @@ h1 {
 
 /* Contact */
 
-#contact-form-card,
 #contact-info-card {
     background-color: white;
     grid-column: 1 / -1;
@@ -216,7 +233,7 @@ h1 {
 #contact-info-card {
     color: white;
     padding: 2rem;
-    background-color: #252525;
+    background-color: #333333;
     border-radius: 20px;
     box-shadow: 0 10px 25px rgba(0,0,0,0.08);
 }
@@ -249,62 +266,6 @@ h1 {
     font-size: 0.95rem;
 }
 
-/* Email form */
-
-#contact-section {
-    margin: 0px auto;
-}
-
-#contact-form-card {
-    padding: 2rem;
-    background-color: rgb(255, 255, 255);
-    border-radius: 20px;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
-}
-
-#contact-form-card > h2 {
-    margin-bottom: 0.25rem;
-}
-
-#contact-form-card > p {
-    margin-bottom: 2rem;
-}
-
-.form-group {
-    display: flex;
-    flex-direction: column;
-}
-
-input,
-textarea {
-    padding: 0.75rem;
-    border-radius: 12px;
-    border: 1px solid #ddd;
-    font-size: 1rem;
-    margin: 1rem 0rem;
-}
-
-#form-submit-button {
-    margin-top: 0.25rem;
-    padding: 0.9rem 1rem;
-    border-radius: 12px;
-    border: none;
-    width: 100%;
-
-    background: #000;
-    color: #fff;
-    font-size: 1rem;
-    font-weight: 800;
-    letter-spacing: 0.05rem;
-
-    transition: transform 180ms ease, box-shadow 180ms ease;
-}
-
-#form-submit-button:hover {
-    cursor: pointer;
-    transform: translateY(-2px);
-    box-shadow: 0 8px 20px rgba(0,0,0,0.25);
-}
 
 /* Footer */
 
