@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="styles/navMenu.css">
+    <link rel="stylesheet" href="styles/Non-Profits.css">
 
     <!-- Font-family -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -53,63 +54,23 @@
         </div>
     </div>
 
-    <!-- Banner -->
-    <div id="banner">
-        <div id="banner-text-contaner">
-            <h1>Points For Profit</h1>
-            <p id="slogan"><strong><a class="color-1">Shop </a><a class="color-2">Local. </a><a class="color-3">Serve </a><a class="color-4">Local. </a><a class="color-5">Sustain </a><a class="color-6">Local.</a></strong></p>
-        </div>
-    </div>
-
-    <div id="hero">
-
-        <!-- Pinnacle Partners -->
-        <section id="pinnacle-partners">
-            <div id="grid-box">
-                <img id="pinnacle-partners-banner" src="images/pinnacle-partners.png" alt="">
-            </div>
-        </section>
-
-        <!-- How it works -->
-        <section id="how-it-works" class="body-content">
-            <div class="HIW-container">
-                <div class="HIW-card">
-                <h3 id="slogan"><strong><a class="color-1">Shop </a><a class="color-2">Local</a></strong></h3>
-                <p></p>
-                </div>
-
-                <div class="HIW-card">
-                <h3 id="slogan"><strong><a class="color-3">Serve </a><a class="color-4">Local</a></strong></h3>
-                <p></p>
-                </div>
-
-                <div class="HIW-card">
-                <h3 id="slogan"><strong><a class="color-5">Sustain </a><a class="color-6">Local</a></strong></h3>
-                <p></p>
+    <main id="businesses-page">
+        <section id="businesses-hero">
+            <div class="section-header">
+                <h1>Non Profits</h1>
+                <div class="search-container">
+                    <input type="text" id="business-search" placeholder="Search Non Profits..." aria-label="Search Non Profits">
                 </div>
             </div>
         </section>
 
-        <!-- Who We Are -->
-        <section id="who-we-are">
-            <div id="who-we-are-header">
-                <h2 id="who-we-are-h2">Who We Are</h2>
-            </div>
-
-            <div id="who-we-are-grid-box">
-                <div class="who-we-are-card">
-                    
-                </div>
-
-                <div class="who-we-are-card">
-                
-                </div>
+        <section id="businesses-list">
+            <div class="businesses-grid" id="businesses-grid" aria-live="polite">
+                <div class="businesses-loading">Loading Non Profits…</div>
             </div>
         </section>
+    </main>
 
-        <!-- Contact -->
-
-    </div>
 
     <footer>
         <section id="contact">
@@ -143,6 +104,7 @@
         </section>
     </footer>
     <!-- Scripts -->
+    <script src="/Scripts/Non-Profits.js"></script>
     <script src="index.js"></script>
 
 </body>
