@@ -60,7 +60,7 @@ html {
     text-align: center;
     
     padding: 2rem;
-    background-color: rgba(39, 39, 39, 0.4);
+    background-color: rgba(39, 39, 39, 0.6);
     border-radius: 20px;
 }
 
@@ -212,7 +212,7 @@ h1 {
 
 #contact-info-card {
     background-color: white;
-    grid-column: 1 / -1;
+    grid-column: 1;
 }
 
 #contact-grid-box {
@@ -266,14 +266,14 @@ h1 {
     font-size: 0.95rem;
 }
 
-
 /* Footer */
 
 footer {
-    background-color: #252525;
+    background-color: #2525258f;
     color: white;
 
     text-align: center;
     margin-top: 10rem;
     padding: 1rem;
 }
+
