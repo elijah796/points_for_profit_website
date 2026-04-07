@@ -135,7 +135,8 @@
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    padding: 0.45rem 0.85rem;
+    padding: 0.5rem 0.85rem;
+    margin: 0 10px;
     border-radius: 999px;
     background-color: #333333;
     color: #ffffff;
@@ -145,10 +146,17 @@
 }
 
 .business-card__description {
-    margin: 0;
-    color: #2c2c2c;
-    line-height: 1.75;
-    min-height: 5rem;
+    display: inline-flex;
+    margin: 0 10px;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5rem 0.85rem;
+    border-radius: 999px;
+    background-color: rgba(255, 201, 54, 0.9);
+    color: #000000;
+    font-size: 0.9rem;
+    font-weight: 700;
+    letter-spacing: 0.03em;
 }
 
 .business-card__tags {
@@ -161,8 +169,8 @@
 }
 
 .business-card__tag {
-    background-color: #33ff7abe;
-    color: #111111;
+    background-color: rgba(181, 63, 217, 0.9);
+    color: #ffffff;
     border-radius: 999px;
     padding: 0.45rem 0.85rem;
     font-size: 0.85rem;
@@ -182,8 +190,8 @@
     justify-content: center;
     padding: 0.95rem 1.25rem;
     border-radius: 999px;
-    background-color: #B53FD9;
-    color: #ffffff;
+    background-color: #33ff7abe;
+    color: #000000;
     text-decoration: none;
     font-weight: 700;
     transition: transform 0.2s ease, box-shadow 0.2s ease;
@@ -199,8 +207,10 @@
 .businesses-error {
     padding: 2rem;
     border-radius: 20px;
-    background-color: rgba(255, 255, 255, 0.95);
-    color: #333333;
+    background: linear-gradient(to bottom right, #F9B700, #FF5F43, #BC0035, #7A009F);
+    color: #ffffff;
+    font-weight: 600;
+    font-size: larger;
     text-align: center;
     box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
 }

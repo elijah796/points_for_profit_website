@@ -18,7 +18,7 @@
 #mobile-menu-panel {
   height: 100%;
   width: 100%;
-  background: linear-gradient(to bottom, #F9B700, #FF5F43, #BC0035, #7A009F, #0A4BFF, #33FF7A);
+  background: linear-gradient(to bottom, #D59F0B, #F44C2E, #D92659, #A833CC, #376AF6, #0BD552);
   box-sizing: border-box;
 
   transform: translateX(100%);
@@ -172,7 +172,7 @@ nav {
   z-index: 10;
 
   height: 90px;
-  background: linear-gradient(to right, #F9B700, #FF5F43, #BC0035, #7A009F, #0A4BFF, #33FF7A);
+  background: linear-gradient(to right, #D59F0B, #F44C2E, #D92659, #A833CC, #376AF6, #0BD552);
   display: flex;
   justify-content: space-between;
   align-items: center;
