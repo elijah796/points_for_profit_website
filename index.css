@@ -4,6 +4,7 @@ body { margin: 0px; padding: 0px; background: linear-gradient(to bottom, #F4B406
 html {
     scroll-behavior: smooth;
     scroll-padding-top: 100px;
+    background: #000000;
 }
 
 .color-1 {color: #F9B700;}
@@ -73,7 +74,7 @@ h1 {
 #slogan {
     font-size: 1.5rem;
     font-weight: 345;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    text-shadow: 2px 2px 4px #000000;
 }
 
 /*** Hero ***/
@@ -127,15 +128,10 @@ h1 {
   gap: 0.75rem;
 }
 
-.HIW-card img {
-  width: 70px;
-  height: 70px;
-  object-fit: contain;
-}
 
 .HIW-card h3 {
-  margin: 0;
-  font-size: 1.17rem;
+    margin: 0;
+    font-size: 1.17rem;
 }
 
 .HIW-card p {
@@ -165,12 +161,19 @@ h1 {
 #who-we-are-h2 {
     grid-column: 1 / 12;
     text-align: center;
-    margin-bottom: 2rem;
 
     padding: 20px;
     border-radius: 20px;
     box-shadow: 0 10px 25px rgba(0,0,0,0.08);
     background-color: rgba(255, 255, 255, 0.92);
+}
+
+#who-we-are-h3 {
+    
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 0.5rem;
+
 }
 
 #who-we-are-hint {

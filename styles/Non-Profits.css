@@ -148,6 +148,7 @@
     display: inline-flex;
     align-items: center;
     justify-content: center;
+    text-align: center;
     padding: 0.45rem 0.85rem;
     border-radius: 999px;
     background-color: #333333;
