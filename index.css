@@ -158,6 +158,12 @@ h1 {
     background-color: rgba(255, 255, 255, 0.92);
 }
 
+#who-we-are-p {
+    text-align: center;
+    margin-top: 1.5rem;
+    font-weight: 450;
+}
+
 #who-we-are-h2 {
     grid-column: 1 / 12;
     text-align: center;
@@ -171,6 +177,14 @@ h1 {
 #who-we-are-h3 {
     
     text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 0.5rem;
+
+}
+
+#who-we-are-img {
+    
+    align-self: center;
     margin-top: 2rem;
     margin-bottom: 0.5rem;
 
