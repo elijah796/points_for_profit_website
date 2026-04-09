@@ -71,6 +71,10 @@ h1 {
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
+a {
+    color: #14bd4f;
+}
+
 #slogan {
     font-size: 1.5rem;
     font-weight: 345;
@@ -160,8 +164,13 @@ h1 {
 
 #who-we-are-p {
     text-align: center;
+
     margin-top: 1.5rem;
-    font-weight: 450;
+    margin-left: 20px;
+    margin-right: 20px;
+
+    font-size: 1.05rem;
+    font-weight: 500;
 }
 
 #who-we-are-h2 {
@@ -201,6 +210,17 @@ h1 {
     gap: 2rem
 }
 
+#events-p {
+    text-align: center;
+
+    margin-top: 1.5rem;
+    margin-left: 20px;
+    margin-right: 20px;
+
+    font-size: 1.05rem;
+    font-weight: 450;
+}
+
 @media (min-width: 768px) {
     #who-we-are-grid-box {
         grid-template-columns: repeat(2, 1fr);
@@ -211,7 +231,7 @@ h1 {
     padding: 2rem;
     border-radius: 20px;
     box-shadow: 0 10px 25px rgba(0,0,0,0.08);
-    background-color: rgba(255, 255, 255, 0.92);
+    background-color: rgba(255, 255, 255, 0.85);
 
     align-self: start;
 }
