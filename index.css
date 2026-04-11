@@ -79,6 +79,14 @@ a {
     text-shadow: 2px 2px 4px #000000;
 }
 
+@media (min-width: 375px) { :root { font-size: 16.8px; } }  /* 16 * 1.05 */
+@media (min-width: 425px) { :root { font-size: 17.6px; } }  /* 16 * 1.10 */
+@media (min-width: 768px) { :root { font-size: 18.4px; } }  /* 16 * 1.15 */
+@media (min-width: 1024px){ 
+    h1 {font-size: 6rem;} #slogan{font-size: 2.3rem;} #banner-text-contaner{padding: 3rem 4rem;}
+ } 
+
+
 /*** Hero ***/
 
 /* Pinnacle partners */
