@@ -18,7 +18,7 @@
 #mobile-menu-panel {
   height: 100%;
   width: 100%;
-  background: linear-gradient(to bottom, #D0A42A, #DF7562, #C85172, #A75ABF, #6A8AE2);
+  background: #462755;
   box-sizing: border-box;
 
   transform: translateX(100%);
@@ -171,7 +171,7 @@ nav {
   z-index: 10;
 
   height: 90px;
-  background: #B85699 ;
+  background: #462755 ;
   display: flex;
   justify-content: space-between;
   align-items: center;
