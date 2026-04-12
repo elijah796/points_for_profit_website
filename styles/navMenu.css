@@ -18,7 +18,7 @@
 #mobile-menu-panel {
   height: 100%;
   width: 100%;
-  background: linear-gradient(to bottom, #D59F0B, #F44C2E, #D92659, #A833CC, #376AF6, #0BD552);
+  background: #462755;
   box-sizing: border-box;
 
   transform: translateX(100%);
@@ -166,13 +166,12 @@
 }
 
 nav {
-  border-bottom: 1px solid black;
   position: sticky;
   top: 0;
   z-index: 10;
 
   height: 90px;
-  background: linear-gradient(to right, #D59F0B, #F44C2E, #D92659, #A833CC, #376AF6, #0BD552);
+  background: #462755 ;
   display: flex;
   justify-content: space-between;
   align-items: center;
