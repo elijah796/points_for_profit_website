@@ -79,11 +79,17 @@ a {
     text-shadow: 2px 2px 4px #000000;
 }
 
+#sloganDescription {
+    font-size: 1.7rem;
+    font-weight: 340;
+    text-shadow: 2px 2px 4px #000000;
+}
+
 @media (min-width: 375px) { :root { font-size: 16.8px; } }  /* 16 * 1.05 */
 @media (min-width: 425px) { :root { font-size: 17.6px; } }  /* 16 * 1.10 */
 @media (min-width: 768px) { :root { font-size: 18.4px; } }  /* 16 * 1.15 */
 @media (min-width: 1024px){ 
-    h1 {font-size: 6rem;} #slogan{font-size: 2.3rem;} #banner-text-contaner{padding: 3rem 4rem;}
+    h1 {font-size: 6rem;} #slogan{font-size: 2.3rem;} #sloganDescription{font-size: 1.7rem;} #banner-text-contaner{padding: 3rem 4rem;}
  } 
 
 
@@ -248,8 +254,15 @@ a {
     border-radius: 20px;
     box-shadow: 0 10px 25px rgba(0,0,0,0.08);
     background-color: rgba(255, 255, 255, 0.8);
+    height: 93%;
 
     align-self: start;
+}
+
+@media (min-width: 426px) {
+    .who-we-are-card {
+        height: 90%;
+    }
 }
 
 .who-we-are-list {
