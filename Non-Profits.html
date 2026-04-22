@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="styles/navMenu.css">
+    <link rel="stylesheet" href="styles/Non-Profits.css">
+
+    <!-- Font-family -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>Points For Profit</title>
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav>
+        <a href="/"><img id="nav-logo" src="images/points_for_profit_logo.jpg" alt="Points For Profit logo"></a>
+        <img id="nav-hamburger" src="images/icons/burger-icon.png" alt="Hamburger menu icon">
+        <div id="desktop-nav">
+            <a class="nav-link" href="/">Home</a>
+            <a class="nav-link" href="/businesses.html">Businesses</a>
+            <a class="nav-link" href="/Non-Profits.html">Non Profits</a>
+            <a class="nav-link" target="_blank" href="https://drive.google.com/drive/folders/1T5ye9c72YkucPifFDWRMm6gSk6cG9Rst?usp=drive_link">Newspaper</a>
+            <a class="nav-link" href="#contact">Contact</a>
+            <!-- <a class="nav-link" href="/points">Points</a> -->
+        </div>
+    </nav>
+
+    <!-- Mobile Menu Overlay -->
+    <div id="mobile-menu" aria-hidden="true">
+        <div id="mobile-menu-panel">
+            <div id="mobile-menu-top">
+            <img id="mobile-menu-logo" src="images/points_for_profit_logo.jpg" alt="Points For Profit" width="48" height="48">
+            <button id="mobile-menu-close" type="button" aria-label="Close menu">
+            </button>
+            </div>
+
+            <ul id="mobile-menu-links">
+                <li><a class="mobile-menu-link nav-link" href="/">Home</a></li>
+                <li><a class="mobile-menu-link nav-link" href="/businesses.html">Businesses</a></li>
+                <li><a class="mobile-menu-link nav-link" href="/Non-Profits.html">Non Profits</a></li>
+                <li><a class="mobile-menu-link nav-link" target="_blank" href="https://drive.google.com/drive/folders/1T5ye9c72YkucPifFDWRMm6gSk6cG9Rst?usp=drive_link">Newspaper</a></li>
+                <li><a class="mobile-menu-link nav-link" href="#contact">Contact</a></li>
+                <!-- <li><a class="mobile-menu-link nav-link" href="/points">Points</a></li> -->
+            </ul>
+
+        </div>
+    </div>
+
+    <main id="businesses-page">
+        <section id="businesses-hero">
+            <div class="section-header">
+                <h1>Non Profits</h1>
+                <div class="search-container">
+                    <input type="text" id="business-search" placeholder="Search Non Profits..." aria-label="Search Non Profits">
+                </div>
+            </div>
+        </section>
+
+        <section id="businesses-list">
+            <div class="businesses-grid" id="businesses-grid" aria-live="polite">
+                <div class="businesses-loading">Loading Non Profits…</div>
+            </div>
+        </section>
+    </main>
+
+
+    <footer>
+        <section id="contact">
+            <div class="" id="contact-grid-box">
+
+                <!-- Contact Info -->
+                <div id="contact-info-card">
+                    <h2>Contact</h2>
+                    <p>Prefer phone or email? Here are quick ways to reach us.</p>
+
+                    <div class="contact-block">
+                        <h4>Phone & Email</h4>
+                        <p>Phone: <a href="tel:541-791-2901" class="color-6">541-791-2901</a></p>
+                        <p>Email: <a href="mailto:Highpointspublication@gmail.com" class="color-6">Highpointspublication@gmail.com</a></p>
+                    </div>
+
+
+
+                    <div class="contact-block">
+                        <h4>Location / Mailing Address</h4>
+                        <p><a href="https://maps.app.goo.gl/QM395dhr7BTtMDBi8" target="_blank" class="color-6">250 Broadalbin St SW Suite #215, Albany, OR 97321</a></p>
+                        <p class="contact-faded">Serving Linn County and surrounding areas</p>
+                    </div>
+
+                    <!-- <div class="contact-block">
+                        <h4>Meetings</h4>
+                        <p>Meetings are held on the Last Tuesday of the month. Contact us and join our next meeting</p>
+                    </div> -->
+                </div>
+            </div>
+        </section>
+    </footer>
+    <!-- Scripts -->
+    <script src="/Scripts/Non-Profits.js"></script>
+    <script src="index.js"></script>
+
+</body>
+</html>
