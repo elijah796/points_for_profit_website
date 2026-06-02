@@ -170,10 +170,17 @@ function buildBusinessCard(data) {
 }
 
 async function loadBusinesses() {
-  const container = document.getElementById('businesses-grid');
-  if (!container) return;
+  const pinnacleGrid = document.getElementById('pinnacle-grid');
+  const supportersGrid = document.getElementById('supporters-grid');
+  if (!pinnacleGrid || !supportersGrid) return;
 
-  container.innerHTML = '<div class="businesses-loading">Loading businesses…</div>';
+  pinnacleGrid.innerHTML = '<div class="businesses-loading">Loading businesses…</div>';
+  supportersGrid.innerHTML = '<div class="businesses-loading">Loading businesses…</div>';
+
+  function isPinnacleTag(tagString) {
+    const tags = parseTags(tagString || '');
+    return tags.some(t => t.replace(/^#/, '').trim().toLowerCase() === 'pinnacle partner');
+  }
 
   try {
     let businesses = [];
@@ -193,10 +200,20 @@ async function loadBusinesses() {
       throw new Error('No businesses were found. Check your spreadsheet URL and header names.');
     }
 
-    container.innerHTML = '';
-    businesses.forEach((business) => container.appendChild(buildBusinessCard(business)));
+    pinnacleGrid.innerHTML = '';
+    supportersGrid.innerHTML = '';
+
+    businesses.forEach((business) => {
+      const card = buildBusinessCard(business);
+      if (isPinnacleTag(business.Tags || business.Tags === '' ? business.Tags : '')) {
+        pinnacleGrid.appendChild(card);
+      } else {
+        supportersGrid.appendChild(card);
+      }
+    });
   } catch (error) {
-    container.innerHTML = `<div class="businesses-error">${error.message}</div>`;
+    pinnacleGrid.innerHTML = `<div class="businesses-error">${error.message}</div>`;
+    supportersGrid.innerHTML = `<div class="businesses-error">${error.message}</div>`;
   }
 }
 
@@ -227,4 +244,16 @@ function filterBusinesses(query) {
     const isVisible = !query || searchableText.includes(query);
     card.style.display = isVisible ? '' : 'none';
   });
+
+  // Hide section containers if they have no visible cards
+  const pinnacleSection = document.getElementById('pinnacle-section');
+  const supportersSection = document.getElementById('supporters-section');
+  if (pinnacleSection) {
+    const visibleInPinnacle = pinnacleSection.querySelectorAll('.business-card').length && Array.from(pinnacleSection.querySelectorAll('.business-card')).some(c => c.style.display !== 'none');
+    pinnacleSection.style.display = visibleInPinnacle ? '' : 'none';
+  }
+  if (supportersSection) {
+    const visibleInSupporters = supportersSection.querySelectorAll('.business-card').length && Array.from(supportersSection.querySelectorAll('.business-card')).some(c => c.style.display !== 'none');
+    supportersSection.style.display = visibleInSupporters ? '' : 'none';
+  }
 }
