@@ -7,6 +7,7 @@
   /* start hidden */
   opacity: 0;
   pointer-events: none;
+  visibility: hidden;
 
   /* subtle dark overlay behind panel (optional) */
   background: rgba(0, 0, 0, 0.55);
@@ -32,6 +33,7 @@
 #mobile-menu.is-open {
   opacity: 1;
   pointer-events: auto;
+  visibility: visible;
 }
 
 #mobile-menu.is-open #mobile-menu-panel {
@@ -114,6 +116,10 @@
 }
 
 @media (min-width: 1024px) {
+    #mobile-menu {
+        display: none;
+    }
+
     /* Hide and show elements */
     #desktop-nav {
         display: flex;
