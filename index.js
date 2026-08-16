@@ -10,12 +10,14 @@
   function openMenu() {
     menu.classList.add("is-open");
     menu.setAttribute("aria-hidden", "false");
+    menu.style.visibility = "visible"; // ensure visibility (overrides any inline or runtime changes)
     document.body.style.overflow = "hidden"; // prevent background scroll
   }
 
   function closeMenu() {
     menu.classList.remove("is-open");
     menu.setAttribute("aria-hidden", "true");
+    menu.style.visibility = "hidden"; // hide explicitly to match closed state
     document.body.style.overflow = ""; // restore scroll
   }
 
